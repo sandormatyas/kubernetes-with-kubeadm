@@ -12,7 +12,7 @@ First we set up three VMs in VirtualBox with the help of a Vagrantfile.
 
     config.vm.provision "shell", path: "provision.sh"
 
-With the **VAGRANT_NO_PARALLEL** variable set to *yes* different VMs are set up after each other, one at a time. VMs are given their IP address and the provision script we want to run on them.
+With the **VAGRANT_NO_PARALLEL** variable set to *yes* different VMs are set up after each other, one at a time. VMs are given their IP address and run the corresponding provision script on them.
 
 The first script that we run (on all machines) is `provision.sh`. In `provision.sh` we:
  1. set host names for the IP addresses
